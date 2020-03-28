@@ -1,0 +1,139 @@
+ body{
+         background:linear-gradient(45deg, #00406d, #7e0294);
+         background-repeat: no-repeat;
+         height: 100vh;
+         overflow: hidden;
+         }
+         .login{
+         width: 350px;
+         height: 400px;
+         background: white;
+         position: relative;
+         margin: auto;
+         top:150px;
+         animation: form 2s 1;
+         box-shadow: 2px 4px 20px 0px #020004b8;
+         padding: 20px;;
+         text-align: center;
+         }
+         @keyframes form{
+         0% {top:500px;width:500px;height: 800px;}
+         100% {top:150px;width:350px;height: 400px;}
+         }
+         .icontainer{
+         margin:10% 1%;
+         }
+         input{
+         padding: 10px;
+         font-size: 15px;
+         width: 80%;
+         margin-left: -5px;
+         }
+         .icon{
+         background: #069;
+         padding: 15px;
+         color:white;
+         }
+         .show1{
+         position: absolute;
+         right: 45px;
+         line-height: 45px;
+         color: #CCC;
+         border-left: 1px solid #d4d4d4;
+         padding: 0px 0px 0px 10px;
+         cursor: pointer;
+         z-index: 150;
+         }
+         a{
+         color: #069;
+         }
+         a:hover{
+         text-decoration: none;
+         color:black;
+         }
+         .btnedesign{
+         background:#069;
+         border-radius: 20px;
+         width: 80%;
+         outline:none;
+         border:none;
+         padding: 10px;
+         color: white;
+         font-weight: bold;
+         transition: ease all 0.5s;
+         }
+         .btnedesign:hover{
+         background: #333;
+         transition: ease all 0.5s;
+         outline: none;
+         }
+         .signupbtn{
+         background: #069;
+         width: 60px;
+         height: 60px;
+         font-size: 20px;
+         padding: 5px;
+         outline: none;
+         border:none;
+         color:white;
+         border-radius: 50%;
+         position: relative;
+         right: 0;
+         top: 17px;
+         }
+         .rotate{
+         animation: rotate 0.5s forwards;
+         }
+         @keyframes rotate{
+         0% {Left: 0%}
+         100% {Left:-100%}
+         }
+         .rotate3{
+         animation: rotate3 0.5s forwards;
+         }
+         @keyframes rotate3{
+         0% {Left: -100%}
+         100% {Left:0%}
+         }
+         .signup{
+         width: 350px;
+         height: 400px;
+         background: white;
+         position: absolute;
+         margin: auto;
+         top:150px;
+         animation: form 2s 1;
+         box-shadow: 2px 4px 20px 0px #020004b8;
+         padding: 20px;;
+         text-align: center;
+         top:150px;
+         left: 200%;
+         }
+         .signup .icontainer{
+         margin: 5% 2%;
+         }
+         .rotate2{
+         animation: rotate2 0.5s forwards;
+         }
+         @keyframes rotate2{
+         0% {left: 200%}
+         100% {left:42%}
+         }
+         .loginbtn{
+         background: #069;
+         width: 60px;
+         height: 60px;
+         font-size: 20px;
+         padding: 5px;
+         outline: none;
+         border:none;
+         color:white;
+         border-radius: 50%;
+         position: absolute;
+         right: 42.5%;
+         bottom: -8%;   animation: form3 2s 1;
+         }
+         @keyframes form3{
+         0% {bottom:-51%;}
+         100% {bottom:-8%;}
+         }

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="login">
+         <form class="form">
+            <h3> LogIn </h3>
+            <hr/>
+            <div class="icontainer"><span class="fa fa-user icon"></span>
+               <input type="text" placeholder="Enter UserName" />
+            </div>
+            <div class="icontainer"><span class="fa fa-lock icon"></span>
+               <span class="fa fa-eye show1"></span>
+               <input type="password" placeholder="Enter Your password" class="cp" />
+            </div>
+            <hr/>
+            <!--
+            <p class="text-right"><a href="">Forgot Password...?</a>
+            </p>-->
+            <button class="btnedesign">LogIn</button>
+         </form>
+         <button class="signupbtn"><span class="fa fa-arrow-right"></span>
+         </button>
+      </div>
+      <!--
+      <div class="signup">
+         <form>
+            <h3> Signup </h3>
+            <hr/>
+            <div class="icontainer"><span class="fa fa-user icon"></span>
+               <input type="text" placeholder="Enter Your Name" />
+            </div>
+            <div class="icontainer"><span class="fa fa-lock icon"></span>
+               <span class="fa fa-eye show1"></span>
+               <input type="password" placeholder="Enter Your password" class="cp" />
+            </div>
+            <div class="icontainer"><span class="fa fa-lock icon"></span>
+               <span class="fa fa-eye show1"></span>
+               <input type="password" placeholder="Re-Enter Your password" class="cp" />
+            </div>
+            <hr/>
+            <button class="btnedesign">Signup</button>
+         </form>
+         <button class="loginbtn"><span class="fa fa-arrow-left"></span>
+         </button>
+      </div>
+    -->
+
+
+
+<!--Script starts-->
+<script>
+  var count = 0;
+            $(".show1").click(function() {
+                count++;
+                var isEven = function(someNumber) {
+                    return (someNumber % 2 === 0) ? true : false;
+                };
+                if (isEven(count) === false) {
+                  $(".cp").prop('type', 'text');
+               $(".show1").css('color', '#069');
+                } else if (isEven(count) === true) {
+                  $(".cp").prop('type', 'password');
+               $(".show1").css('color', '#ccc');
+                }
+            });
+         
+         
+           $(".signupbtn").click(function(){
+             $(".login").addClass("rotate");
+                 $(".signup").addClass("rotate2");
+         
+                   $(".login").removeClass("rotate3");
+         
+           });
+         
+         
+             $(".loginbtn").click(function(){
+               $(".login").addClass("rotate3");
+                   $(".login").removeClass("rotate");
+                   $(".signup").removeClass("rotate2");
+         
+             });
+</script>
+
+</body>
+</html>
